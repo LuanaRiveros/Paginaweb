@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'M PLUS 1', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(../Fondo/Fondo4.jpg);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .menu{
+        background: rgb(0,0,0,0.1);
+        height: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+        .nav{
+            flex: 5 1 auto;
+        }
+            .nav a{
+                color:white;
+                font-size: 15px;
+                font-style: initial;
+                font-family: M PLUS 1;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: blue;
+            }
+    .section{
+        background:black;
+        display: flex;
+    }
+        .articulos{
+            background: white;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+            .article{
+                flex: 1 1 32%;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 50px 20px 20px 20px;
+            }
+            .article img{
+                width: 100%;
+            }
+            h3{
+                font-size: 20px;
+                color: black;
+                font-family: Harmattan;
+            }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: left;
+        margin-top: 70px;
+        padding: 10px 0px 10px 0px;
+    }
+        .pie{
+            /*background: yellowgreen;*/
+            margin-left: 20px;
+        }
+        .pie a{
+        color: white;
+        font-size: 20px;
+        }
+        h6{
+            color: white;
+            font-size: 15px;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+        }
+@media all and (min-width:1920px){
+    .nav a{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .pie a{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:768px){
+    .section{
+        flex-direction: column;
+    }
+    .footer{
+        padding: 20px 0px 10px 0px;
+    }
+        .pie{
+            margin-left: 5px;
+            text-align: left;
+        }
+        .pie a{
+            font-size: 20px;
+        }
+        h6{
+            font-size: 15px;
+        }
+}
+@media all and (max-width:376px){
+    .nav a{
+        font-size: 13px;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    h3{
+        font-size: 18px;
+    }
+}

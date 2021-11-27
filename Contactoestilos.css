@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'M PLUS 1', sans-serif;
+}
+.menu a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(../Fondo/Fondo4.jpg);
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .menu{
+        background: rgba(0,0,0,0.1);
+        height: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+        .nav{
+            flex: 5 1 auto;
+        }
+            .nav a{
+                color:white;
+                font-size: 15px;
+                font-style: initial;
+                font-family: M PLUS 1;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: blue;
+            }
+    .container{
+        background: white;
+        display: block;
+    }
+        h1{
+            font-family: Abril Fatface;
+            font-size: 50px;
+            color: black;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        h2{
+            color: black;
+            font-family: Harmattan;
+            font-size: 5px;
+            text-align: center;
+        }
+        .form-control{
+            margin-top: 30px;
+        }
+        .form-control.success input{
+            border-color: greenyellow;
+        }
+        .form-control small{
+            color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        .form-control.error small{
+            visibility: visible;
+        }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: left;            
+        padding: 10px 0px 10px 0px;
+        }
+        .pie{
+            /*background: yellowgreen;*/
+            margin-left: 20px;
+        }
+        .pie a{
+            color: white;
+            font-size: 20px;
+            display: inline-flex;
+        }
+        h6{
+            color: white;
+            font-size: 15px;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+        }
+            .footer a{
+                text-decoration: none;
+            }
+@media all and (min-width: 1920px){
+    .nav a{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    .col-lg-6 img{
+        margin: 60px 0px 60px 0px;
+        width: 100%;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+    .pie a{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 22px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+@media all and (max-width:768px){
+    .nav a{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .col-lg-6 img{
+        margin: 60px 0px 60px 0px;
+        width: 100%;
+    }
+}
+@media all and (max-width:376px){
+    .nav a{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .col-lg-6 img{
+        margin: 20px 5px 30px 5px;
+        width: 100%;
+    }
+}

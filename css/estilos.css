@@ -1,0 +1,383 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'M PLUS 1', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(../Fondo/Fondo1.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .menu{
+        background: rgba(0,0,0,0.3);
+        height: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+        .logo{
+            flex: 1 1 auto;
+            margin-left: 20px;
+            font-family: M PLUS 1;
+        }
+            .logo a{
+                color:white;
+                font-size: 30px;
+            }
+            .logo a:hover{
+                color: blue;
+            }
+        .nav{
+            flex: 10 1 auto;
+        }
+            .nav a{
+                color:white;
+                font-size: 15px;
+                font-style: initial;
+                font-family: M PLUS 1;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: blue;
+            }
+    .texto-principal{
+        /*background: orange;*/
+        height: 800px;
+        display: flex;
+        align-items: center;
+    }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: black;
+            font-weight: 250;
+            font-family: Comforter Brush;
+            text-align: center;
+            line-height: 1.6;
+            padding: 0px 0px 350px 550px;
+        }
+    .section{
+        background:black;
+        display: flex;
+    }
+        .articulos{
+            background: white;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+            h2{
+                /*background: orange;*/
+                font-size: 40px;
+                color: black;
+                font-family: Abril Fatface;
+                font-weight: 300;
+                line-height: 1.6;
+                letter-spacing: 2px;
+                margin-left: 450px;
+                margin-right: 450px;
+                margin-top: 30px;
+                white-space: nowrap;
+            }
+            .article{
+                flex: 1 1 10%;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 100px 20px 80px 20px;
+            }
+            .article img{
+                width: 100%;
+            }
+            .articulos img{
+                width: 100%;
+            }
+            h3{
+                font-size: 20px;
+                color: black;
+                font-family: Harmattan;
+            }
+    .texto-secundario{
+        /*background: red;*/
+    }
+        h4{
+            background: rgb(170,4,4);
+            color: white;
+            font-size: 30px;
+            font-family: Abril Fatface;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            letter-spacing: 2px;
+            }
+        h4 i{
+            font-size: 27px;
+            font-family: Harmattan;
+        }
+    .section1{
+        background:black;
+        display: flex;
+    }
+        .articulos1{
+            background:white;
+            display: flex;
+            justify-content: center;
+        }
+            .article1{
+                flex: 1 1 10%;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 100px 10px;
+            }
+            .article1 img{
+                width: 100%;
+            }
+            h5{
+                font-size: 20px;
+                color: black;
+                font-family: Harmattan;
+            }
+        .video{
+            display: block;
+            text-align: center;
+        }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: left;
+        margin-top: 70px;
+        padding: 10px 0px 10px 0px;
+    }
+        .pie{
+            /*background: yellowgreen;*/
+            margin-left: 20px;
+        }
+        .pie a{
+            color: white;
+            font-size: 20px;
+        }
+        h6{
+            color: white;
+            font-size: 15px;
+        }
+        p{
+            color: white;
+            font-size: 15px;
+        }
+@media all and (min-width: 1920px){
+    .logo{
+        margin-left: 30px;
+    }
+    .logo a{
+        font-size: 40px;
+    }
+    .nav{
+        flex: 12 1 auto;
+    }
+        .nav a{
+            font-size: 20px;
+        }
+    .texto-principal h1{  
+        padding: 0px 0px 350px 800px;
+        flex-flow: row;
+    }
+    .articulos{
+        justify-content: center;
+    }
+        h2{
+            font-size: 45px;
+            font-weight: 300;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 100px;
+        }
+        .article{
+            flex: 1 1 30%;
+            margin: 100px 50px 10px 50px;
+        }
+        h3{
+            font-size: 30px;
+        }
+    .texto-secundario h4{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+        h4 i{
+            font-size: 37px;
+        }
+    .articulos1{
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    .article1{
+        flex: 1 1 40%;
+        margin: 50px 50px 10px 50px;
+    }
+        h5{
+            font-size: 30px;
+        }
+        .video{
+            margin-top: 50px;
+        }
+    .pie a{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:768px){
+    .texto-principal h1{   
+        padding: 0px 0px 350px 290px;
+    }
+    .articulos{
+        justify-content: center;
+    }
+        h2{
+            font-size: 35px;
+            font-weight: 250;
+            line-height: 1.6;
+            letter-spacing: 2px;
+            margin-left: 100px;
+            margin-right: 150px;
+            margin-top: 25px;
+        }
+        .article{
+            flex: 1 1 40%;
+            margin: 50px 10px 10px 10px;
+        }
+        .article img{
+            width: 100%;
+        }
+        .articulos img{
+            width: 100%;
+            margin-top: 80px;
+        }
+        h3{
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    .texto-secundario h4{
+        font-size: 24px;
+        margin-top: 50px;
+        letter-spacing: 2px;
+        padding: 23px 20px 0px 20px;
+        align-items: center;
+    }
+        h4 i{
+            font-size: 21px;
+            font-family: Harmattan;
+        }
+    .articulos1{
+        justify-content: center;
+        flex-flow: wrap;
+    }
+        .article1{
+            flex: 1 1 40%;
+            margin: 50px 10px 10px 10px;
+        }
+        .article1 img{
+            width: 100%;
+        }
+        h5{
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        .video{
+            margin-top: 50px;
+        }
+}
+@media all and (max-width:376px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .logo{
+        justify-content: center;
+    }
+        .logo a{
+            font-size: 25px;
+        }
+        .nav a{
+            font-size: 13px;
+        }
+    .texto-principal h1{   
+        padding: 0px 0px 280px 100px;
+    }
+    .articulos{
+        justify-content: center;
+    }
+        h2{
+            font-size: 25px;
+            font-weight: 200;
+            margin-left: 250px;
+            margin-right: 250px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .article{
+            flex: 1 1 50%;
+            margin: 30px 10px 5px 10px;
+        }
+        .article img{
+            width: 300px;
+        }
+        .articulos img{
+            width: 100%;
+            margin-top: 80px;
+        }
+        h3{
+            font-size: 15px;
+            margin-left: 5px;
+        }
+    .texto-secundario h4{
+        font-size: 20px;
+        margin-top: 60px;
+        padding: 30px;
+    }
+        h4 i{
+            font-size: 17px;
+        }
+        .articulos1{
+            justify-content: center;
+            flex-flow: column;
+        }
+            .article1{
+                flex: 1 1 50%;
+                margin: 30px 10px 5px 10px;
+            }
+            h5{
+                font-size: 15px;
+                margin-left: 5px;
+            }
+            .video{
+                margin-top: 40px;
+            }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contactoestilos.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/5dec6cd992.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Harmattan&family=M+PLUS+1:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu">
+                <nav class="nav">
+                    <a href="index.html">Volver al Inicio</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <br>
+                <h1>Contacto</h1>
+                <h2>(+917) 893384909</h2>
+                <form action="Formulario">
+                    <div class="form-control">
+                        <label for="Nombre"></label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                        <small>Ingrese su Nombre</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="Apellido"></label>
+                        <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
+                        <small>Ingrese su Apellido</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="Email"></label>
+                        <input type="text" class="form-control" id="Email" placeholder="Correo Electrónico">
+                        <small>Ingrese su Email</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="Telefono"></label>
+                        <input type="number" class="form-control" id="Teléfono" placeholder="Teléfono">
+                        <small>Ingrese su Teléfono</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="Asunto"></label>
+                        <input type="text" class="form-control" id="Asunto" placeholder="Asunto">
+                        <small>Ingrese el Asunto</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="Mensaje"></label>
+                        <input type="text" class="form-control" id="Mensaje" placeholder="Mensaje">
+                        <small>Ingrese el mensaje</small>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto"> <br>
+                        <button type="button" onclick="enviarFormulario" class="btn btn-outline-secondary">Enviar</button>
+                    </div> 
+                </form>
+            </div> 
+            <div class="col-lg-6">
+                <img src="Imagenes/9999.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <nav class="pie">
+            <h6>Sobre Mujercitas</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus deserunt debitis sint repellendus distinctio tempora reiciendis dignissimos itaque veritatis a ut exercitationem fuga temporibus magni vitae in, velit molestiae cumque?
+            Nulla, quos culpa ducimus rem fuga mollitia vel quo facere quasi exercitationem, accusamus consectetur quam corporis, pariatur nihil. Corporis, accusamus beatae. Praesentium, nemo? Doloremque, vero! Rerum asperiores expedita repellat quas.</p>
+            <br>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>    
+            <a href="https://twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </nav>
+    </footer>
+    <script src="Validarform.js"></script>
+</body>
+</html>
